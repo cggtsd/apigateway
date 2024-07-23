@@ -49,7 +49,17 @@ server:
 #       - url: /hotels/v3/api-docs
 #         name: Hotel Service      
 #       - url: /ratings/v3/api-docs
-#         name: Rating Service      
+#         name: Rating Service  
+
+# okta configuration for api gateway
+okta:
+  oauth2:
+    issuer: https://dev-66345900.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oaii6nrr5OYHJUQL5d7
+    client-secret: hgACUeHHBh06uyiM490vEnKWyGx75GgLUfUgDwchlpfJJyM1Sgj9rl68oOvjFB55
+    scopes: openid, profile, email, offline_access
+    
 
 
          
